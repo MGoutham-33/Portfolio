@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./images/Style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body onload="myFunction()">
+<div id="loading"></div>
+ <script type="text/javascript" src="./assests/js/main.js"></script>
+     <input type="checkbox" id="check">
+    <!--header area start-->
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3><span>Portfolio</span></h3>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--mobile navigation bar start-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+        <img src="./images/profile.jpg" class="mobile_profile_image" alt="">
+        <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+        <a href="index.html"><span>HOME</span></a>
+        <a href="Resume.html"><span>RESUME</span></a>
+        <a href="Projects.html"><span>PROJECTS</span></a>
+        <a href="About.html"></i><span>ABOUT</span></a>
+        <a href="contact.html"></i><span>CONTACT</span></a>
+      </div>
+    </div>
+    <!--mobile navigation bar end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+      <div class="profile_info">
+        <img src="./images/profile.jpg" class="profile_image" alt="">
+        <h4>M Goutham</h4>
+      </div>
+      <a href="index.html"><span>HOME</span></a>
+        <a href="Resume.html"><span>RESUME</span></a>
+        <a href="Projects.html"><span>PROJECTS</span></a>
+        <a href="About.html"></i><span>ABOUT</span></a>
+        <a href="contact.html"></i><span>CONTACT</span></a>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+     <div class="message">
+        <h4>HELLO THERE</h4><br>
+        <h1>I'M GOUTHAM</h1> 
+        <a href="./images/cv.pdf">Download CV</a> 
+     </div>
+</div>
+    
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.nav_btn').click(function(){
+        $('.mobile_nav_items').toggleClass('active');
+      });
+    });
+    </script>
+  </body>
+</script>
+</html>
